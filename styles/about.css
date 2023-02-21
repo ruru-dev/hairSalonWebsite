@@ -1,0 +1,33 @@
+.container-content {
+  width: 1090px;
+  margin: 80px auto 70px auto;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-us-message {
+  background-color: rgb(69,73,72);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+h1 {
+  display: inline;
+  padding: 10px 30px;
+  color: white;
+  font-size: 30px;
+  border-radius: 5px;
+  height: 10px;
+}
+
+h2, p {
+  margin: 20px;
+  font-size: 20px;
+}
+
+p {
+  line-height: 2.5;
+  font-size: 15px;
+}
+
+.container-h1 {
+  margin-bottom: 50px;
+}

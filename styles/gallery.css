@@ -1,0 +1,40 @@
+.container-content {
+  width: 1000px;
+  margin: auto;
+  padding: 70px 0px;
+}
+
+.container-hairstyles {
+  margin-bottom: 40px;
+}
+
+h1 {
+  padding: 10px 30px;
+  color: white;
+  font-size: 30px;
+  border-radius: 5px;
+  background-color: rgb(69,73,72);
+  display: inline;
+}
+
+.container-gallery {
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "image-1 image-2 image-3 image-4"
+    "image-5 image-6 image-7 image-8"
+    "image-9 image-10 image-11 image-12"
+    "image-13 image-14 image-15 image-16"
+  ;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.container-gallery img {
+  height: 250px;
+  width: 250px; 
+  border-radius: 10px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: rgba(216, 211, 211, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+} 

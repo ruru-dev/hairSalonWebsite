@@ -1,0 +1,36 @@
+.container-content {
+  display: grid;
+  width: 1000px;
+  margin: auto;
+  column-gap: 60px;
+  grid-template-columns: 1.6fr 1.4fr;
+  margin: 70px auto;
+  margin-bottom: 110px;
+  font-family: 'Sree Krushnadevaraya', serif;
+}
+
+.grid-section-1 {
+  padding: 20px 30px;
+  font-size: 17px;
+}
+
+.grid-section-1 > p:first-of-type {
+  margin-top: 20px;
+}
+
+.grid-section-2 {
+  border: 6px solid rgb(73, 73, 69);
+  border-radius: 5px;
+  padding: 20px 30px;
+  font-size: 17px;
+  background-color: rgb(241,240,239);
+  box-shadow: rgba(44, 40, 43, 0.4) 0px 5px, rgba(43, 35, 40, 0.3) 0px 10px, rgba(68, 57, 64, 0.2) 0px 15px, rgba(61, 48, 56, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+.recent-news {
+  text-align: center;
+}
+
+p {
+  line-height: 29px;
+}

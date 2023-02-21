@@ -1,0 +1,64 @@
+header {
+  display: flex;
+  width: 100%;
+  background-color: rgb(69,73,72);
+  justify-content: center;
+}
+
+.header-content {
+  position: relative;
+}
+
+nav {
+  background-color: rgb(69,73,72);
+  color: white;
+  display: flex;
+  width: 1090px;
+  justify-content: end;
+}
+
+.container-nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 150px;
+  letter-spacing: 5px;
+  margin-right: 20px;
+}
+
+.container-nav-links > a {
+  margin: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.business-logo-image {
+  border-radius: 3px;
+  width: 300px;
+  height: 125px;
+  position: absolute;
+  bottom: -20px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.container-footer {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(69,73,72);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-copyright {
+  color: white;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  opacity: 0.6;
+}

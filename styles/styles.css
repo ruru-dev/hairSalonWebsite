@@ -1,0 +1,176 @@
+.container-main {
+  width: 100%;
+}
+
+.container-content {
+  width: 1090px;
+  margin: auto;
+}
+
+.container-main-grid {
+  margin-top: 60px;
+  height: auto;
+  display: grid;
+  grid-template-rows: 300px 250px auto 250px 432px;
+  grid-template-columns: 250px 250px 250px 250px;
+  column-gap: 30px;
+  row-gap: 40px;
+  grid-template-areas: 
+    "top-section top-section top-section top-section"
+    "figure-image-1 figure-image-2 figure-image-3 figure-image-4"
+    "summary-1 summary-2 summary-3 summary-4"
+    "featured featured hairstyle hairstyle"
+    "featured featured aside aside"
+    ;
+}
+
+.top-section {
+  grid-area: top-section;
+  height: 300px;
+  width: 1090px;
+  background-image: url("/images/top-section-image.jpg");
+}
+
+.top-section-message {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  margin-left: 65%;
+  padding-top: 90px;
+}
+
+.figure-image-1 {
+  background-image: url("/images/figure-1-image.jpg");
+  grid-area: figure-image-1;
+}
+
+.figure-image-2 {
+  background-image: url("/images/figure-2-image.jpg");
+  grid-area: figure-image-2;
+}
+
+.figure-image-3 {
+  background-image: url("/images/figure-3-image.jpg");
+  grid-area: figure-image-3;
+}
+
+.figure-image-4 {
+  background-image: url("/images/figure-4-image.jpg");
+  grid-area: figure-image-4;
+}
+
+.figure {
+  box-shadow: 5px 10px;
+}
+
+.summary-1 {
+  grid-area: summary-1;
+}
+
+.summary-2 {
+  grid-area: summary-2;
+}
+
+.summary-3 {
+  grid-area: summary-3;
+}
+
+.summary-4 {
+  grid-area: summary-4;
+}
+
+.summary {
+  font-family: 'Sree Krushnadevaraya', serif;
+  font-size: 16px;
+  padding: 0px 25px;
+  margin: 10px 0px;
+}
+
+h1 {
+  font-family: 'Sree Krushnadevaraya', serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.container-featured {
+  height: 682px;
+  grid-area: featured;
+  position: relative;
+}
+
+.featured-title {
+  font-size: 20px;
+  color: white;
+  background-color: rgb(69,73,72);
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  z-index: 1;
+  padding: 10px 20px;
+  border: 1px solid  white;
+}
+
+.featured-details {
+  padding: 60px 40px ;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.8;
+  z-index: 1;
+}
+
+.container-featured-background-image {
+  background-image: url("/images/section-featured-image.jpg");
+  opacity: .5;
+  height: 682px;
+}
+
+.container-hairstyle {
+  grid-area: hairstyle;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+}
+
+.hairstyle-title {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  color: white;
+  background-color: rgb(69,73,72);
+  font-size: 20px;
+  border: 1px solid  white;
+  padding: 10px 20px;
+}
+
+.hairstyle-summary {
+  color: rgb(69,73,72);
+  padding: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: rgb(241, 240, 239);
+}
+
+.container-aside {
+  grid-area: aside;
+  height: 333px;
+  background-color: rgb(239, 240, 241);
+  position: relative;
+  border-radius: 5px;
+}
+
+.aside-image {
+  position: absolute;
+  top: -17px;
+  border-radius: 5px;
+}
+
+.aside-details {
+  padding-left: 350px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 110px;
+  line-height: 40px;
+  color: rgb(69,73,72);
+  font-weight:800;
+}
