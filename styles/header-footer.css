@@ -62,3 +62,12 @@ nav {
   margin: 10px;
   opacity: 0.6;
 }
+
+@media (max-width: 480px) {
+  .business-logo-image {
+    display: none;
+  }
+  .about-us-message {
+    
+  }
+}

@@ -174,3 +174,47 @@ h1 {
   color: rgb(69,73,72);
   font-weight:800;
 }
+
+@media (max-width: 480px) {
+  .container-main-grid {
+    width: 480px;
+    grid-template-rows:300px repeat(10, 250px) 1000px 300px 300px;
+    grid-template-columns: 480px;
+    grid-template-areas: 
+      "top-section"
+      "figure-image-1"
+      "summary-1"
+      "figure-image-2"
+      "summary-2" 
+      "figure-image-3"
+      "summary-3"
+      "figure-image-4"
+      "summary-4"
+      "featured"
+      "featured"
+      "hairstyle"
+      "aside";
+  }
+
+  .top-section {
+    background-position-x: -80px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .top-section-message {
+    margin-left: 120px;
+    padding-top: 200px;
+  }
+
+  .figure {
+    background-repeat: no-repeat;
+    box-shadow: none;
+    margin-left: 105px;
+    width: 250px;
+  }
+
+  .summary {
+    padding: 20px 70px;
+  }
+}

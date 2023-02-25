@@ -31,3 +31,20 @@ p {
 .container-h1 {
   margin-bottom: 50px;
 }
+
+@media (max-width: 510px) {
+  .container-content {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0px 20px;
+  }
+  
+  .container-h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  h1 {
+    height: 65px;
+  }
+}
