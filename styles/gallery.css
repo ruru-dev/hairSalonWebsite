@@ -19,7 +19,7 @@ h1 {
 
 .container-gallery {
   display: grid;
-  grid: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: 
     "image-1 image-2 image-3 image-4"
@@ -38,3 +38,23 @@ h1 {
   border: 5px solid rgb(255, 255, 255);
   box-shadow: rgba(216, 211, 211, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 } 
+
+@media (max-width: 480px) {
+  .container-content {
+    width: 100%;
+    margin: auto;
+    padding: 70px 0px;
+  }
+
+  .container-gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+     align-items: center;
+  }
+
+  .container-hairstyles {
+    display: flex;
+    justify-content: center;
+  }
+}
