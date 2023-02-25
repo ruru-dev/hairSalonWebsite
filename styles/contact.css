@@ -1,7 +1,6 @@
 .container-content {
   width: 1000px;
-  margin: auto;
-  height: 500px;
+  margin: 50px auto 10px auto;
 }
 
 .container-h1 {
@@ -30,4 +29,30 @@ h1 {
   text-align: center;
   border-radius: 5px;
   padding: 20px 0px;
+}
+
+/* ************** */
+.container-footer {
+  position: absolute;
+  bottom: 0;
+}
+/* *************** */
+
+@media (max-width: 480px) {
+  .container-content {
+    width: 100%;
+    padding: 30px;
+    margin-top: 10px;
+    padding: 0 50px;
+    text-align: center;
+  }
+
+/******************* */
+  .container-footer {
+    padding: 0px 30px;
+    position: absolute;
+    bottom: -290px;
+    margin-bottom: 0px;
+  }
+/* ****************** */
 }
