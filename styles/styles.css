@@ -178,8 +178,9 @@ h1 {
 @media (max-width: 480px) {
   .container-main-grid {
     width: 480px;
-    grid-template-rows:300px repeat(10, 250px) 1000px 300px 300px;
+    grid-template-rows: 340px repeat(8, 250px) 682px 250px 373px;
     grid-template-columns: 480px;
+    gap: 0px;
     grid-template-areas: 
       "top-section"
       "figure-image-1"
@@ -190,7 +191,6 @@ h1 {
       "summary-3"
       "figure-image-4"
       "summary-4"
-      "featured"
       "featured"
       "hairstyle"
       "aside";
@@ -216,5 +216,25 @@ h1 {
 
   .summary {
     padding: 20px 70px;
+    line-height: 30px;
+  }
+
+  .featured-details {
+    padding-bottom: 0px;
+    font-size: 18px;
+    line-height: 38px;
+  }
+
+  .container-hairstyle {
+    margin-top: 40px;
+  }
+
+  .container-aside {
+    margin-bottom: 40px;
+  }
+
+  .aside-details {
+    line-height: 1.9;
+    padding-bottom: 0px;
   }
 }
