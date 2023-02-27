@@ -9,19 +9,15 @@ header {
   position: relative;
 }
 
-nav {
+.container-nav-links {
   background-color: rgb(69,73,72);
   color: white;
   display: flex;
-  width: 1090px;
-  justify-content: end;
-}
-
-.container-nav-links {
-  display: flex;
   flex-direction: row;
+  justify-content: end;
   align-items: center;
   height: 150px;
+  width: 1090px;
   letter-spacing: 5px;
   margin-right: 20px;
 }
@@ -67,7 +63,10 @@ nav {
   .business-logo-image {
     display: none;
   }
-  .about-us-message {
-    
+
+  .container-nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
   }
 }
