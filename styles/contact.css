@@ -1,6 +1,13 @@
+.container-main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .container-content {
   width: 1000px;
-  margin: 50px auto 10px auto;
+  margin: 0px auto 10px auto;
+  flex: 1;
 }
 
 .container-h1 {
@@ -31,24 +38,19 @@ h1 {
   padding: 20px 0px;
 }
 
-.container-footer {
-  position: absolute;
-  bottom: 0;
-}
-
 @media (max-width: 480px) {
   .container-content {
     width: 100%;
-    padding: 30px;
-    margin-top: 10px;
     padding: 0 50px;
     text-align: center;
   }
 
-  .container-footer {
-    padding: 0px 30px;
-    position: absolute;
-    bottom: -290px;
-    margin-bottom: -20px;
+  .container-h1 {
+    margin-top: 40px;
+  }
+
+  .contact-information {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
