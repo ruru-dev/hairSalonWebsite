@@ -7,6 +7,7 @@ header {
 
 .header-content {
   position: relative;
+      height: 150px;
 }
 
 .container-nav-links {
@@ -46,6 +47,7 @@ header {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  padding: 20px;
 }
 
 .footer-copyright {
@@ -59,14 +61,25 @@ header {
   opacity: 0.6;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+  .header-content {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .business-logo-image {
-    display: none;
+    position: relative;
   }
 
   .container-nav-links {
     flex-direction: column;
     width: 100%;
     height: auto;
+    display: none;
+    /* hid the nav for now. ideally we'd have a hamburger button and then it would pop out when clicked. */
+    /* checkout the link below for an example */
+    /* https://codepen.io/itdoesnmakesense/pen/KbapJB */
   }
 }
